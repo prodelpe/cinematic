@@ -1,0 +1,205 @@
+body {
+    padding-top: 3.5rem;
+    background: url(/images/bg.png);
+}
+
+.container {
+    max-width: 1280px;
+}
+
+.navbar-brand {
+    font-family: 'Boogaloo';
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.70rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.cinematic-pagination {
+    margin: 0 auto;
+}
+
+.cinematic-pagination ul {
+    margin-bottom: 0;
+}
+
+a.cinematic-lang:hover {
+    color: #343a40 !important;
+}
+
+/* Welcome */
+
+.jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/images/cover.jpg);
+    background-position: top center;
+    background-size: cover;
+    border-radius: 0;
+    min-height: 350px;
+}
+
+.header_title {
+    font-family: 'Boogaloo';
+    text-shadow: 1px 1px 3px black;
+}
+
+.header-info {
+    font-family: 'Boogaloo';
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 3px black;
+    line-height: 1;
+}
+
+.last-reviews h2 {
+    font-family: 'Boogaloo';
+}
+
+/* Search */
+
+.movie-results {
+    margin: 20px 0;
+}
+
+.movie-column a:hover {
+    text-decoration: none;
+}
+
+.movie_poster {
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.movie-poster a:hover {
+    text-decoration: none;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    h5.card-title {
+        font-size: 0.8rem;
+    }
+}
+
+/* Movie */
+
+.single-movie {
+    padding: 40px 0;
+}
+
+.cinematic-header {
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cinematic-inner-header {
+    background-image: linear-gradient(to right, 
+        rgba(11.76%, 15.29%, 17.25%, 1.00) 150px, 
+        rgba(19.61%, 21.96%, 23.53%, 0.74) 100%);
+}
+
+ul.cast, 
+ul.crew {
+    padding: 0;
+    list-style-type:none;
+}
+
+@media only screen and (max-width: 768px) {
+    .row.single-movie {
+        text-align: center;
+    }
+
+    .single-movie h1 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    .single-movie .note {
+        position: absolute;
+        top: -480px;
+        left: 150px;
+    }
+
+    .credits, .crew {
+        text-align: center;
+    }
+
+    .container.credits {
+        margin-top: 0 !important;
+    }
+
+    .credits .credits-continer-inner h2 {
+        margin-top: 20px;
+    }
+
+}
+
+/* Auth */
+#login .row.justify-content-center, 
+#register .row.justify-content-center, 
+#verify .row.justify-content-center, 
+#confirm .row.justify-content-center, 
+#email .row.justify-content-center, 
+#reset .row.justify-content-center,
+#home .row.justify-content-center
+{
+    min-height: 75%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 75vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+/* Review.Create */
+
+.vote {
+    background-color: #62c8d0;
+    border-radius: 15px;
+    font-family: 'Boogaloo';
+}
+
+.vote select {
+    font-family: 'Nunito';
+}
+
+.create-header {
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.create-inner-header {
+    background-image: linear-gradient(to right, 
+        rgba(11.76%, 15.29%, 17.25%, 1.00) 150px, 
+        rgba(19.61%, 21.96%, 23.53%, 0.74) 100%)
+}
+
+/* Review.Index */
+
+.review-header {
+    line-height: 0.5;
+}
+
+/* Home */
+
+.dashboard-profile {
+    line-height: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar-menu {
+        margin-bottom: 40px;
+    }
+}
